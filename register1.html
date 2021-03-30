@@ -1,0 +1,147 @@
+ <style>
+      .img-container1 {
+	              text-align: center;
+			              
+			            }
+            body {
+		                background-image: url('https://storage.googleapis.com/web-bucket12/cloud.jpg');
+					            background-repeat: no-repeat;
+							                background-attachment: fixed;
+										            background-size: cover;
+												              }
+	          .center {
+			                margin-top:60px;
+						              margin-left: auto;
+								                    margin-right: auto;
+											                }
+
+		      </style>
+
+		      <script type="text/javascript">
+function validateForm() {
+	  
+
+
+
+	  var letters = /^[a-zA-Z ]*$/;
+	    var numbers = /^[0-9]+$/;
+	      var alphanumberic = /^[a-z0-9]+$/i
+		        var x = document.forms["f1"]["t1"].value;
+	        var y=document.forms["f1"]["t2"].value;
+		 var z=document.forms["f1"]["t3"].value;
+		  var a=document.forms["f1"]["t4"].value;
+		   var b=document.forms["f1"]["t5"].value;
+		   var c=document.forms["f1"]["t6"].value;
+
+
+		   if(!x.match(letters))
+			         {
+					    alert("! Alphabet characters only");
+					          return false;
+						        }
+
+		   else if(!y.match(numbers))
+		   {
+			   alert("! You cannot leave this field empty");
+			   return false;
+		   }
+
+		   else if(!z.match(letters))
+		   {
+			   alert("Only in words");
+			   return false;
+		   }
+
+		   else if(!a.match(letters))
+		   {
+			   alert("! You cannot leave this field empty");
+			   return false;
+		   }
+
+		   else if(!b.match(alphanumberic))
+		   {
+			   alert("! You cannot leave this field empty");
+			   return false;
+		   }
+
+
+
+		   else if(!c.match(numbers))
+		   {
+			   alert("! You cannot leave this field empty");
+			   return false;
+		   }
+
+		   else
+		   {
+			   alert("Thank You, Registration is completed. We have emailed you a confirmation.");
+			   return true;
+		   }
+
+}
+
+		      </script></head>
+		      <body>
+			      <div class="img-container1"> <!-- Block parent element -->
+
+				          </div>
+
+					  <table class="center">
+						  <form name="f1" action="index1.php" method="post" onsubmit="return validateForm(this)">
+
+							  <tr>
+								  <th align="center"><h2>CERTIFICATION REGISTRATION FORM </h2></th>
+							  </tr>
+							  <tr><td><h4> Employee Name<font color="black"><sup>*</sup></font></h4></td><td><input type="text" name="t1" placeholder="Name as in Certificate"></td></tr>
+
+
+							  <tr>
+								  <td><h4> Employee Id<font color="black"><sup>*</sup></font></h4></td><td><input type="number" name="t2" placeholder="Enter the empid"></td></tr>
+
+								<tr>
+									<td><h4>Email ID<font color="black"><sup>*</sup></font><h4></td><td><input type="email" name="t10" placeholder="Enter email id"></td>
+								</tr>
+		         					  <tr>
+		    						  <tr>
+									  <td><h4>Certification Service Provider<font color="black "><sup>*</sup></font></h4></td>
+									  <td>
+										  <select name="s1">
+											  <option value="1">GCP</option>
+											  <option value="2">AWS</option>
+											  <option value="3">AZURE</option>
+										  </select>
+									  </td>
+									  <tr>
+										  <td><h4>Certification Level<font color="black"><sup>*</sup></font></h4></td><td><input type="text" name="t3" placeholder="Associate/Professional"></td>
+									  </tr>
+									  <tr>
+										  <td><h4>Certification Name<font color="black"><sup>*</sup></font></h4></td><td><input type="text" name="t4" placeholder="Name as in certificate"></td>
+									  </tr>
+									  <tr>
+										  <td><h4>Certification Id<font color="black"><sup>*</sup></font></h4></td><td><input type="text" name="t5" placeholder="In alphanumeric"></td>
+									  </tr>
+									  <tr>
+										  <td><h4>Date of certification<font color="black"><sup>*</sup></font></h4></td><td><input type="date" id="start" name="t7"
+															           min="2020-01-01" max="2040-12-31">
+										  </td>
+
+									  </tr>
+									  <tr>
+										  <td><h4>Expiry Date of Certification<font color="black"><sup>*</sup></font></h4></td>
+										  <td><input type="date" id="start" name="t8"o
+
+					             min="2020-01-01" max="2040-12-31">
+										  </td>
+									  </tr>
+									  <tr>
+										  <td><h4>Validity<font color="black"><sup>*</sup></font></h4></td><td><input type="numbers" name="t6" placeholder="In numbers"></td>
+									  </tr>
+                                                              
+	
+					  </table>
+					  <input type="SUBMIT" value="SUBMIT" name="submit"  style="background-color:#454545; color:white; margin-left: 500px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					  <input type="RESET" value="CANCEL" style="background-color:#454545; color:white;">
+						  </form>
+		      </body>
+		      </html>
+
